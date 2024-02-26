@@ -13,13 +13,13 @@ const packs = [
         {
           name: "Scarlet and Violet Booster Pack",
           price:4.99,
-          gen:"Scarlet and Violet",
+          gen:"Scarlet & Violet",
           img:"https://product-images.tcgplayer.com/fit-in/437x437/476451.jpg"
         },
         {
          name:"Paradox Rift Booster Pack",
          price:4.99,
-         gen:"",
+         gen:"Scarlet & Violet",
          img:"https://product-images.tcgplayer.com/fit-in/437x437/512822.jpg"
         },
         {
@@ -46,6 +46,42 @@ const packs = [
           gen:"Sword & Shield",
           img:"https://product-images.tcgplayer.com/fit-in/437x437/216852.jpg"
         },
+        {
+          name:"Paldean Fates Booster Pack",
+          price: 4.42,
+          gen:"Scarlet & Violet",
+          img: "https://product-images.tcgplayer.com/fit-in/437x437/528038.jpg"
+        },
+        {
+          name:"Lost Origin Booster Pack",
+          price:3.80,
+          gen:"Sword & Shield",
+          img:"https://product-images.tcgplayer.com/fit-in/437x437/277325.jpg"
+        },
+        {
+          name:"Evolutions Booster Pack",
+          price:22.74,
+          gen:"XY",
+          img:"https://product-images.tcgplayer.com/fit-in/437x437/129907.jpg"
+        },
+        {
+          name:"Unbroken Bonds Booster Pack",
+          price:15.89,
+          gen:"Sun & Moon",
+          img:"https://product-images.tcgplayer.com/fit-in/437x437/185718.jpg"
+        },
+        {
+          name:"XY BREAKthrough Booster Pack",
+          price:16.64,
+          gen:"XY",
+          img:"https://product-images.tcgplayer.com/fit-in/437x437/107666.jpg"
+        },
+        {
+          name:"Next Destinies Booster Pack",
+          price:69.98,
+          gen:"Black & White",
+          img:"https://product-images.tcgplayer.com/fit-in/437x437/98538.jpg"
+        }
       ]
 </script>
 

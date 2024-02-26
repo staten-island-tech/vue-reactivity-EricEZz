@@ -2,8 +2,9 @@
     <div>
         <h2>{{ Pack.name }}</h2>
         <img :src="Pack.img" alt="">
-        <h3>{{ clicked }}</h3>
-        <button @click="increment">Click Me</button>
+        <h3>Amount in Cart: {{ clicked }}</h3>
+        <h4>{{ Pack.price }}</h4>
+        <button @click="increment"> Add to Cart</button>
     </div>
 </template>
 
