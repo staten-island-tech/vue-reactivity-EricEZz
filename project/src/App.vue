@@ -1,16 +1,18 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import {PokeCard} from './components/PokeCard.vue'
 </script>
 
 <template>
   <header>
 
-    <div class="wrapper">
+  <div class="wrapper">
       <h1>Cart</h1>
       <div class="cards">
       </div>
-      <h2>{{ clicked.value++ }}</h2>
+      <h2>Items in Cart:{{ clicked }}</h2>
       <h3>{{ totalcost }}</h3>
+      <PokeCard />
     </div>
   </header>
 

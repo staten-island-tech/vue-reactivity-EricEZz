@@ -3,7 +3,6 @@
     <PokeCard v-for="pack in packs" 
     :key="pack.name" 
     :Pack="pack"/>
-    <button></button>
   </div>
 </template>
 
