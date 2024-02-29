@@ -7,12 +7,12 @@ import {PokeCard} from './components/PokeCard.vue'
   <header>
 
   <div class="wrapper">
-      <h1>Cart</h1>
+      <!-- <h1>Cart</h1>
       <div class="cards">
       </div>
       <h2>Items in Cart:{{ clicked }}</h2>
       <h3>{{ totalcost }}</h3>
-      <PokeCard />
+      <PokeCard /> -->
     </div>
   </header>
 
