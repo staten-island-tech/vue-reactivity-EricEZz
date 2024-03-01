@@ -8,6 +8,7 @@
 
 <script setup>
 import PokeCard from "@/components/PokeCard.vue";
+import PokeCart from "@/components/Pokecart.vue";
 const packs = [
         {
           name: "Scarlet and Violet Booster Pack",
