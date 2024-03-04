@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="card">
     <PokeCard v-for="pack in packs" 
     :key="pack.name" 
     :Pack="pack"/>
@@ -9,6 +9,9 @@
 <script setup>
 import PokeCard from "@/components/PokeCard.vue";
 import PokeCart from "@/components/Pokecart.vue";
+import {ref} from "vue";
+
+
 const packs = [
         {
           name: "Scarlet and Violet Booster Pack",
@@ -86,4 +89,8 @@ const packs = [
 </script>
 
 <style scoped>
+.card{
+  display: flex;
+
+}
 </style>
