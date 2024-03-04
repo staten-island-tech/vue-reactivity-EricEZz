@@ -4,7 +4,7 @@
         <img :src="Pack.img" alt="">
         <h4>{{ Pack.price }}</h4>
         <button @click="increment"> Add to Cart</button>
-        <ChildComp @response="(msg) => childMsg = msg"/>
+        <!-- <ChildComp @response="(msg) => childMsg = msg"/> -->
     </div>
 </template>
 

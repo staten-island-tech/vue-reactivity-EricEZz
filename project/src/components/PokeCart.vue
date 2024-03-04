@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class="container">
    <h1>Cart</h1>
    <div>
         <img :src="Pack.img" alt="">
@@ -8,7 +8,7 @@
         <button @click="minus"> Remove from Cart</button>
     </div>
 </div>
-    <h1>Total Items </h1>
+
 </template>
 
 <script setup>
