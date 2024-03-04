@@ -1,6 +1,6 @@
 <template>
    <div>
-   
+   <h1>Cart</h1>
    <div>
         <img :src="Pack.img" alt="">
         <h2>{{ Pack.name }}</h2>
