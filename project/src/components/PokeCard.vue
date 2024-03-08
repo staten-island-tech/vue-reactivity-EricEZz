@@ -1,25 +1,26 @@
 <template>
-    <div>
-        <h2>{{ Pack.name }}</h2>
-        <img :src="Pack.img" alt="">
-        <h4>{{ Pack.price }}</h4>
-        <button @click="increment"> Add to Cart</button>
+    <div class="cards">
+        <h2 class="name">{{ Pack.name }}</h2>
+        <img :src="Pack.img" alt="" class="img">
+        <h4 class="desc">{{ Pack.price }}</h4>
+        <button id="btn" @click="addToCart()"> Add to Cart</button>
         <!-- <ChildComp @response="(msg) => childMsg = msg"/> -->
     </div>
 </template>
 
 <script setup>
-import ChildComp from "./PokeCart.vue"
 const props = defineProps({
-    //age:Number
-    Pack: Object,
-});
-function increment(){
+    Pack:Object,
+}); 
 
+const emit = defineEmits([
+    "add"
+])
+function addToCart(){
+    emit("add")
 }
-function add(){
-   packs.push(pack)
-}
+
+
 </script>
 
 <style scoped>

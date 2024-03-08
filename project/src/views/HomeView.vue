@@ -1,18 +1,38 @@
 <template>
+  <div>
+    <PokeCart
+    :cart="cart"
+    :total="total"
+    />
+  </div>
+  
   <div class="card">
     <PokeCard v-for="pack in packs" 
     :key="pack.name" 
-    :Pack="pack"/>
+    :Pack="pack"
+    @add="addToCart(pack)"/>
   </div>
+
+
 </template>
 
 <script setup>
 import PokeCard from "@/components/PokeCard.vue";
-import PokeCart from "@/components/Pokecart.vue";
+import PokeCart from "../components/PokeCart.vue";
 import {ref} from "vue";
 
+const cart = 
+ref([])
 
-const packs = [
+const total = ref(0)
+
+function addToCart(pack) {
+  total.value += pack.price
+  cart.value.push(pack)
+}
+
+const packs = 
+[
         {
           name: "Scarlet and Violet Booster Pack",
           price:4.99,
