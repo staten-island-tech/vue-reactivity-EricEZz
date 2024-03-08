@@ -2,7 +2,7 @@
    <div class="cart">
    <h1>Cart</h1>
    <div
-   v-for="pack in packs.cart"
+   v-for="pack in props.cart"
    :key="pack.name"
    class="cartInfo">
         <img :src="pack.img" alt="">
@@ -20,6 +20,7 @@
 import{defineProps} from "vue";
 
 const props = defineProps({ cart: Array, total: Number })
+
 // import "./PokeCard.vue"
 // import { ref } from "vue";
 
